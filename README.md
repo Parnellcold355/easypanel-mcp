@@ -416,8 +416,7 @@ asyncio.run(test())
 <em>Ingeniero en Sistemas | Creador de EasyPanel MCP</em><br><br>
 
 🔗 <a href="https://linkedin.com/in/dannymaaz">LinkedIn</a> •
-💻 <a href="https://github.com/dannymaaz">GitHub</a> •
-✉️ <a href="mailto:dannymaaz200@gmail.com">Email</a>
+💻 <a href="https://github.com/dannymaaz">GitHub</a>
 </p>
 
 ---

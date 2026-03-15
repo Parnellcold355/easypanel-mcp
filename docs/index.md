@@ -120,12 +120,17 @@ python src/server.py http
 
 ## 🛠️ Herramientas Disponibles
 
+**30 herramientas** organizadas en **7 categorías** para gestión completa de infraestructura con IA:
+
 | Categoría | Herramientas | Descripción |
-|------------|--------------|-------------|
-| 📦 **Servicios** | `list_services`, `create_service`, `update_service`, `delete_service`, `restart_service`, `get_service_logs` | Gestión completa de servicios Docker |
+|-----------|--------------|-------------|
+| 📦 **Servicios** | `list_services`, `get_service`, `create_service`, `update_service`, `delete_service`, `restart_service`, `start_service`, `stop_service`, `deploy_service`, `get_service_logs` | Gestión completa de servicios Docker + logs inteligentes |
 | 🚀 **Deployments** | `list_deployments`, `create_deployment`, `get_deployment`, `get_deployment_logs` | Control de deployments y versiones |
-| 🌐 **Redes** | `list_networks`, `create_network`, `delete_network` | Administración de redes (incluye internas aisladas) |
-| 📁 **Proyectos** | `list_projects`, `create_project`, `delete_project`, `get_project` | Organización de recursos por proyectos |
+| 🌐 **Redes** | `list_networks` (auto-discovery), `create_network`, `delete_network` | Descubrimiento automático de topología |
+| 📁 **Proyectos** | `list_projects`, `create_project`, `delete_project`, `get_project` | Organización de recursos |
+| 📊 **Monitoring** | `get_system_stats`, `get_service_stats`, `health_check`, `get_server_ip` | Métricas en tiempo real (CPU, RAM, disco) |
+| ⚡ **Scaling** | `scale_service`, `auto_scale_service` | Escalado vertical y automático con thresholds |
+| 🔒 **Security** | `list_domains`, `create_domain`, `get_public_key` | Dominios y autenticación Git |
 
 ---
 
@@ -155,10 +160,14 @@ python src/server.py http
 
 <div class="card" markdown>
 #### 🛠️ Tools Reference
-- [Services Tools](tools/services.md)
-- [Deployments Tools](tools/deployments.md)
-- [Networks Tools](tools/networks.md)
-- [Projects Tools](tools/projects.md)
+- [Overview](tools/overview.md) - 30 herramientas en 7 categorías
+- [Services Tools](tools/services.md) - 10 herramientas (create, deploy, logs)
+- [Deployments Tools](tools/deployments.md) - 4 herramientas
+- [Networks Tools](tools/networks.md) - 3 herramientas (auto-discovery)
+- [Projects Tools](tools/projects.md) - 4 herramientas
+- [Monitoring Tools](tools/overview.md#monitoring-tools) - 4 herramientas (stats, health)
+- [Scaling Tools](tools/overview.md#scaling-tools) - 2 herramientas (auto-scale)
+- [Security Tools](tools/overview.md#security-tools) - 3 herramientas (domains, Git)
 </div>
 
 <div class="card" markdown>
@@ -166,6 +175,14 @@ python src/server.py http
 - [Basic Examples](examples/basic.md)
 - [Advanced Workflows](examples/advanced.md)
 - [Real-World Cases](examples/real-world.md)
+</div>
+
+<div class="card" markdown>
+#### 🚀 Advanced Features
+- [Security & Networks](advanced/features.md) - Auth, redes aisladas
+- [Deployment Guide](advanced/features.md#deployment-features) - Docker, GitHub, Git
+- [Debugging](advanced/features.md#debugging-features) - Logs, diagnóstico
+- [Auto-Scaling](advanced/features.md#auto-scaling-features) - Vertical, automático
 </div>
 
 <div class="card" markdown>
@@ -241,9 +258,8 @@ services:
 **Danny Maaz**  
 _Ingeniero en Sistemas | Creador de EasyPanel MCP_
 
-[🔗 LinkedIn](https://linkedin.com/in/dannymaaz){: target="_blank" rel="noopener" } · 
-[💻 GitHub](https://github.com/dannymaaz){: target="_blank" rel="noopener" } · 
-[✉️ Email](mailto:dannymaaz200@gmail.com){: target="_blank" rel="noopener" }
+[🔗 LinkedIn](https://linkedin.com/in/dannymaaz){: target="_blank" rel="noopener" } ·
+[💻 GitHub](https://github.com/dannymaaz){: target="_blank" rel="noopener" }
 </p>
 
 ---
