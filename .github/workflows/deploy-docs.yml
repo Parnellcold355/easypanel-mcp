@@ -22,6 +22,10 @@ concurrency:
   group: "pages"
   cancel-in-progress: false
 
+# Force JavaScript actions to run on Node.js 24 (avoids Node.js 20 deprecation)
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 jobs:
   deploy:
     environment:
