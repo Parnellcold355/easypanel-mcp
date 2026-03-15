@@ -81,11 +81,12 @@ plugins:
       separator: '[\s\-,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
       lang:
         - en
-  - social:
-      cards: true
-      cards_color:
-        fill: "#1E3A8A"
-        text: "#FFFFFF"
+  # Social cards plugin disabled - requires cairosvg (optional)
+  # - social:
+  #     cards: true
+  #     cards_layout_options:
+  #       background_color: "#1E3A8A"
+  #       color: "#FFFFFF"
 
 # Markdown Extensions
 markdown_extensions:
@@ -151,6 +152,7 @@ nav:
     - n8n Workflows: integration/n8n.md
     - GitHub Actions: integration/github-actions.md
     - Custom Clients: integration/custom-clients.md
+    - Security: integration/security.md
   - Examples:
     - Basic Examples: examples/basic.md
     - Advanced Workflows: examples/advanced.md
