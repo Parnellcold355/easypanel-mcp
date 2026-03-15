@@ -52,7 +52,7 @@ Detecta picos de tráfico y escala servicios automáticamente basado en métrica
 
 <div class="card" markdown>
 #### 🌐 Multi-Plataforma
-Funciona en Windows, macOS y Linux. Compatible con Claude Desktop, n8n, y cualquier cliente MCP.
+Funciona en Windows, macOS y Linux. Compatible con Claude Desktop, Cursor, Cline, ChatGPT, n8n, y cualquier cliente MCP.
 </div>
 
 </div>
@@ -133,6 +133,7 @@ python src/server.py http
 
 <div class="quick-links" markdown>
 
+[AI Agents (Claude, Cursor, Cline, ChatGPT)](integration/ai-agents.md){: .md-button .md-button--primary }
 [Claude Desktop](integration/claude-desktop.md){: .md-button }
 [n8n Workflows](integration/n8n.md){: .md-button .md-button--secondary }
 [GitHub Actions](integration/github-actions.md){: .md-button .md-button--secondary }

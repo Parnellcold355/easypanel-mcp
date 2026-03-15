@@ -149,6 +149,7 @@ nav:
     - Networks: tools/networks.md
     - Projects: tools/projects.md
   - Integration:
+    - AI Agents (All): integration/ai-agents.md
     - Claude Desktop: integration/claude-desktop.md
     - n8n Workflows: integration/n8n.md
     - GitHub Actions: integration/github-actions.md

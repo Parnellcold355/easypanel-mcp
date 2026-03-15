@@ -1,7 +1,7 @@
 ---
 title: Configuration - EasyPanel MCP
 description: Complete configuration guide for EasyPanel MCP server including environment variables, security settings, and advanced options.
-keywords: EasyPanel configuration, MCP settings, environment variables, API configuration, security settings
+keywords: EasyPanel configuration, MCP settings, environment variables, API configuration, security settings, tRPC
 ---
 
 # ⚙️ Configuration Guide
@@ -14,6 +14,8 @@ This guide covers all configuration options for EasyPanel MCP server.
 
 EasyPanel MCP uses environment variables for configuration. You can set these in a `.env` file or directly in your environment.
 
+**Important:** EasyPanel MCP uses **tRPC protocol** to communicate with EasyPanel API. All operations are performed via tRPC procedures.
+
 ---
 
 ## 🔑 Required Configuration
@@ -25,14 +27,45 @@ These settings are **required** to connect to your EasyPanel instance:
 | Variable | Description | Default | Required |
 |----------|-------------|---------|----------|
 | `EASYPANEL_URL` | Your EasyPanel URL | `http://localhost:3000` | ✅ Yes |
-| `EASYPANEL_API_KEY` | Your API key | - | ✅ Yes |
+| `EASYPANEL_API_KEY` | Your API key OR email:password | - | ✅ Yes |
+
+### Authentication Methods
+
+EasyPanel MCP supports **two authentication methods**:
+
+#### Method 1: API Key (Recommended)
+
+Generate an API key from your EasyPanel dashboard:
+
+```bash
+EASYPANEL_API_KEY=ep_live_xxxxxxxxxxxxxxxxxxxx
+```
+
+**Pros:** More secure, can be rotated easily, no password stored
+
+#### Method 2: Email + Password
+
+Use your EasyPanel credentials:
+
+```bash
+EASYPANEL_API_KEY=your@email.com:your_password
+```
+
+**Format:** `email:password` (note the colon separator)
+
+**Pros:** No need to generate keys, **Cons:** Password stored in config
 
 ### Example `.env` File
 
 ```bash
 # Required: EasyPanel Configuration
 EASYPANEL_URL=https://your-easypanel.com
-EASYPANEL_API_KEY=ep_live_xxxxxxxxxxxxxxxxxxxx
+
+# Method 1: API Key (recommended)
+EASYPANEL_API_KEY=ep_live_abc123def456
+
+# OR Method 2: Email + Password
+# EASYPANEL_API_KEY=your@email.com:your_password
 ```
 
 ---
