@@ -5,6 +5,7 @@ site_name: EasyPanel MCP - AI Infrastructure Management
 site_description: "Connect AI agents (Claude, GPT, n8n) to EasyPanel for natural language infrastructure management. Deploy Docker services, manage networks, and automate DevOps with AI."
 site_url: https://dannymaaz.github.io/easypanel-mcp/
 site_author: Danny Maaz
+site_dir: _site
 
 # Repository
 repo_name: dannymaaz/easypanel-mcp
